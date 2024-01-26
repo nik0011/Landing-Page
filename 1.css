@@ -1,0 +1,151 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   font-family:Verdana,  sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #d0d4d5; 
+    position: relative;
+}
+#cursor {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  z-index: 99;
+  mix-blend-mode: difference;
+  border-radius: 50%;
+  background-color: wheat;
+}
+#nav{
+    
+    height: 90px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-prt1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#nav-prt1 img{
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-right: 90px;
+    margin-left: 15px;
+    z-index: 9999;
+    
+}
+#nav-prt1 h3{
+    margin-right: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+     
+}
+#nav-prt1 h3:hover{
+      cursor: pointer;
+      background-color: #fff;
+      border-radius: 50px;
+      font-size: 15px;
+      font-weight: 700;
+}
+
+#nav-prt2 i{
+    margin-right: 60px;
+    justify-content:end;
+    align-items: center;
+}
+#content{
+    width: 100%;
+    height: calc(100% - 90px);
+    display: flex;
+    
+}
+#left{
+    height: 100%;
+    width: 35%; 
+    padding-left: 50px;
+    padding-top: 70px;
+}
+#left h5{
+    font-size: 18px;   
+    font-weight: 800;  
+    color:#3a3a3a ;
+}
+#left h4{
+    font-size: 50px;
+    margin-top: 10px;  
+}
+#left p{
+    font-size: 13px;
+    margin-top: 20px;
+    font-weight: 600;   
+    color:#3a3a3a ;   
+}
+#left button{
+    margin-top: 68px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    font-weight: 600px;
+    padding:13px 26px ;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 0;
+    text-transform: uppercase;
+}
+#left button:hover{
+    box-shadow: 5px 5px 20px #000;
+    transition: 0.3s;
+
+}
+
+
+#right{
+    height: 100%;
+    width: 65%; 
+    position: relative;
+    padding: 80px 120px;   
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+#right::-webkit-scrollbar{
+    display: none;
+   
+}
+.elem{
+    position: absolute;
+    margin: 20px 6px;
+    height:60%;
+    width: 30%;
+    position: relative;
+    padding: 2px 2px;
+    border-radius: 5px;
+    display: inline-block;
+    
+    
+}  
+.elem img{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    box-shadow:5px 5px 15px #464646;
+    border-radius: 6px;    
+}
